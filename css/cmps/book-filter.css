@@ -1,0 +1,11 @@
+/* BOOK FILTER */
+
+.text-input{
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.book-filter{
+    margin: 10px;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,38 @@
+
+/* BOOK LIST */
+
+.book-list-container {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    margin: 10px;
+}
+
+.book-in-lst {
+    background-color: rgb(33, 129, 255);
+    min-height: 220px;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.actions {
+    width: 100%;
+}
+
+.book-btn {
+    padding: 5px;
+    border: 0;
+    background-color: rgb(0, 129, 161);
+    border-radius: 5px;
+    color: white;
+}
+
+/* .details-btn{
+
+} */
+
+/* .x-btn{
+
+} */

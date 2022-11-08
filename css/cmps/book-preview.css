@@ -1,0 +1,18 @@
+
+/* BOOK PREVIEW */
+
+.book-preview{
+    height: 100%;
+}
+
+.book-title{
+    font-size: 1.2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 5px;
+    border-bottom: 5px double solid black;
+}
+
+.price{
+    font-size: 1.2rem;
+    padding: 5px;
+}

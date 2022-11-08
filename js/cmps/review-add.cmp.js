@@ -2,6 +2,7 @@ import bookDetails from "../view/book-details-cmp.js";
 
 export default {
     name: 'review-add',
+    emits: ['reviewed'],
     template: `
     <h2>Add review:</h2>
     <form @submit.prevent="submitRating">
@@ -36,7 +37,7 @@ export default {
     methods: {
         submitRating() {
             console.log('review', { ...this.review });
-            this.$emit('saveReview', { ...this.review })
+            this.$emit('reviewed', { ...this.review })
             this.review = { fullName: 'Books Reader', rate: 1, date: Date.now(), text: '' }
         }
     },

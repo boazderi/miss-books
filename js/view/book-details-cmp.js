@@ -18,7 +18,7 @@ export default {
             <long-text :txt="book.description"/>
             <router-link to="/book">Back</router-link>
             <!-- <li> <span class="book-detail-subject">Description:</span>  {{ getDescription }}</li> -->
-            <review-add @saveReview='saveReview'/>
+            <review-add @reviewed='saveReview'/>
         </ul>
     `,
     data() {
@@ -37,12 +37,13 @@ export default {
             bookService.addReview(this.book.id, review)
             .then( book => {
                 this.book = book
-                const msg = {
-                    text: `Book ${this.book.title} was successfully added`,
-                    type: 'success',
-                    link: `/book/ ${book.id}`
-                }
-                eventBus.emit('user-msg', msg)
+                console.log(this.book)
+                // const msg = {
+                //     text: `Book ${this.book.title} was successfully added`,
+                //     type: 'success',
+                //     link: `/book/ ${book.id}`
+                // }
+                // eventBus.emit('user-msg', msg)
             })
         }
     },

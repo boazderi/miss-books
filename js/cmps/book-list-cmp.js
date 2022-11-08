@@ -11,7 +11,6 @@ export default {
                 <button class="book-btn details-btn" @click="showDetails(book)">Details</button>
                 <button class="book-btn x-btn" @click="remove(book.id)">x</button>
                 <router-link :to="'/book/' + book.id">Details</router-link>
-
             </section>
         </li>
     </ul>
